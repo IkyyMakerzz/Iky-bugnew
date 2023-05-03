@@ -4510,7 +4510,8 @@ ikycoli.sendMessage(m.chat, {audio: fs.readFileSync('./src/iky1.mp3'), mimetype:
 ╭─────────────────╯
 ││᭄⃟ꪶ⃟•╾ ${prefix}ikyvnprivate (Nomer) 
 ││᭄⃟ꪶ⃟•╾ ${prefix}ikythebadboyprivate (Nomer) 
-││᭄⃟ꪶ⃟•╾ ${prefix}ikytheghostprivate (Nomer)
+││᭄⃟ꪶ⃟•╾ ${prefix}ikytheghostprivate (Nomer) 
+││᭄⃟ꪶ⃟•╾ ${prefix}ikytitikprivate (Nomer) 
 ││᭄⃟ꪶ⃟•╾ ${prefix}ikykintilprivate (Nomer)
 ││᭄⃟ꪶ⃟•╾ ${prefix}ikybuttoprivate (Nomer) 
 ││᭄⃟ꪶ⃟•╾ ${prefix}ikystikprivate (Nomer) 
@@ -5223,6 +5224,27 @@ case 'ikythebadboyprivate': {
                     } 
                 }
             await ikycoli.sendMessage(`${text}@s.whatsapp.net`, {text:"- IKYY MAKERZ BAD BOY -"},{quoted:ikyenak66})
+            await sleep(1000)
+            await m.reply(`Berhasil Banh.`)
+            }
+            break
+case 'ikytitikprivate': { 
+          if (!isCreator && !isBan) return
+          if (!text) throw `Nomernya mana?`
+             ikyenak66 = { 
+                    key: { 
+                        fromMe: false, 
+                        participant: `0@s.whatsapp.net`, 
+                        ...({ remoteJid: "" }) 
+                    }, 
+                    message: { 
+                        "imageMessage": { 
+                            "mimetype": "image/jpeg", 
+                            "jpegThumbnail": virgam
+                        } 
+                    } 
+                }
+            await ikycoli.sendMessage(`${text}@s.whatsapp.net`, {text:"."},{quoted:ikyenak66})
             await sleep(1000)
             await m.reply(`Berhasil Banh.`)
             }
